@@ -19,6 +19,7 @@ namespace LINGYUN.ApiGateway
                 .Build();
             Log.Logger = new LoggerConfiguration()
                .ReadFrom.Configuration(configuration)
+               .WriteTo.Console()
                .CreateLogger();
             try
             {

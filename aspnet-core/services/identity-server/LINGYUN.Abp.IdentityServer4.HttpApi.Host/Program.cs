@@ -19,6 +19,7 @@ namespace LINGYUN.Abp.IdentityServer4.HttpApi.Host
                 .Build();
             Log.Logger = new LoggerConfiguration()
                .ReadFrom.Configuration(configuration)
+               .WriteTo.Console()
                .CreateLogger();
             try
             {
